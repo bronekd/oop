@@ -1,3 +1,4 @@
+# záčátek OOP
 #import os
 
 
@@ -10,7 +11,7 @@ def reade_from_file(file_name):
         data = file_handler.read()
     return data
 
-
+MY_FILE = "file.txt"
 
 
 # dává pro spouštění hlavního souboru
