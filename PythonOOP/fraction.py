@@ -1,3 +1,5 @@
+from my_error import MyCustomError
+
 #zlomek
 class Fraction:
     def __init__(self, nominator, denominator):
@@ -21,7 +23,8 @@ class Fraction:
             self.nominator * other.denominator + other.nominator * self.denominator
             self.denominator = common_denominator
             return self
-        raise TypeError("Můj error: Unsupported operand type for +=: {} and {}")
+        #raise TypeError("Můj error: Unsupported operand type for +=: {} and {}") # starý ale funkční nový error vlastní
+        raise MyCustomError("Můj error: Unsupported operand type for +=: {} and {}")
 
 
 

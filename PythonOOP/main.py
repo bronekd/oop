@@ -1,4 +1,5 @@
 from fraction import Fraction
+from my_error import MyCustomError
 
 f1 = Fraction(1,3)
 
@@ -14,5 +15,8 @@ print(f3)
 f3 += f2 # toto je __iadd__
 print(f3)
 
-f3 += 3 # toto je __iadd__
-print(f3)
+try:
+    f3 += 3 # toto je __iadd__
+    print(f3)
+except MyCustomError as e:
+    print("Moje chyba zde testuje moje zprávy chyb")
