@@ -26,8 +26,11 @@ except MyCustomError as e:
 
 
 #další úkol
+#využití dědičnosti ale tak, že první je vehicle a pak to rozšiřuje car ale já přes import car využívám třídu vehicle.
 from car import Car
 c1 = Car("Skoda", "cerna")
 
 print(c1.name)
 c1.start()
+
+
