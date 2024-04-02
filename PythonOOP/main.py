@@ -1,6 +1,7 @@
 from fraction import Fraction
 from my_error import MyCustomError
 
+"""
 f1 = Fraction(1,3)
 
 print(f1)
@@ -20,3 +21,13 @@ try:
     print(f3)
 except MyCustomError as e:
     print("Moje chyba zde testuje moje zprávy chyb")
+
+"""
+
+
+#další úkol
+from car import Car
+c1 = Car("Skoda", "cerna")
+
+print(c1.name)
+c1.start()

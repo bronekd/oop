@@ -1,4 +1,6 @@
 #třídy se píší s velkým písmenem
+
+# toto využívám v souboru car
 class Vehicle:
     def __init__(self, name):
     #inicializace při vytváření konkrétní třídy
@@ -10,7 +12,8 @@ class Vehicle:
     def stop(self):
         print(f"vrvrvr ticho {self.name}")
 
-
+"""
+# vzor prní trénink
 v1 = Vehicle("Vehicle1") #list()
 v2 = Vehicle("Vehicle2")
 v3 = Vehicle("Vehicle3")
@@ -26,4 +29,4 @@ v2.start()
 
 print()
 v3.stop()
-
+"""
