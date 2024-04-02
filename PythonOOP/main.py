@@ -24,7 +24,7 @@ except MyCustomError as e:
 
 """
 
-
+"""
 #další úkol
 #využití dědičnosti ale tak, že první je vehicle a pak to rozšiřuje car ale já přes import car využívám třídu vehicle.
 from car import Car
@@ -32,5 +32,11 @@ c1 = Car("Skoda", "cerna")
 
 print(c1.name)
 c1.start()
+"""
 
+# další úkol počítání plochy
+circle = Circle("Kruh", 5)
+print(f"Plocha {circle.name} je: {circle.calculate_area()}")
 
+squ = Circle("Kruh", 5)
+print(f"Plocha {circle.name} je: {circle.calculate_area()}")

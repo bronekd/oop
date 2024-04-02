@@ -1,10 +1,14 @@
-# vypočítat půlochu shapes
-# základní tvar a z toho dědit
+# vypočítat plochu tvaru
+# Nechápu logiku tříd jak ji vytvořit podívat se k učitelovi
 
-class Shapes:
 
-    def __init__(self, site):
-        self.site = site
+class Shape:
 
-    def Square(self, site):
-        pass
+    def __init__(self, name):
+        self.name = name
+
+    def Calculate_area(self):
+        raise NotImplementedError("Metoda musí být v potomcích")
+
+
+
