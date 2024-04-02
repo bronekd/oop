@@ -1,6 +1,7 @@
 # záčátek OOP
 #import os
 
+# toto je původní vzor main souboru zde je to jinde aby se s tím pracovalo jinak
 
 def write_to_file(file_name, data):
     with open(file_name, "w") as file_handler:
