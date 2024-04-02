@@ -9,7 +9,7 @@ class Human:
         return self.__name #__name je soukromé nastavení uvnitř funkce nelze zvenku číst ani měnit
 
     def set_name(self, new_name):
-        if len(new_name) < 3:
+                if len(new_name) < 3:
             return False
         self.__name = new_name
         return True
