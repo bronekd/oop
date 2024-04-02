@@ -1,16 +1,26 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#import os
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def write_to_file(file_name, data):
+    with open(file_name, "w") as file_handler:
+        file_handler.write(data)
+def reade_from_file(file_name):
+    data = None
+    with open(file_name, "r") as file_handler:
+        data = file_handler.read()
+    return data
 
 
-# Press the green button in the gutter to run the script.
+
+
+# dává pro spouštění hlavního souboru
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    MY_FILE = "file.txt"
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+    user_input = input("Zadej zprávu: ")
+    write_to_file(MY_FILE, user_input)
+    print("Zápis se provedl")
+
+    data = reade_from_file(MY_FILE)
+    print(data)
