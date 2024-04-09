@@ -23,3 +23,7 @@ class BankAccount:
 
     def __str__(self):
         return f"Na učtu je penez {self._balance}"
+
+    @staticmethod
+    def sayGreatings():
+        print("Nice to meet you")
