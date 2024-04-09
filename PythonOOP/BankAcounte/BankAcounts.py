@@ -1,10 +1,19 @@
 class BankAccount:
+    counter = 0 #společný pro všechny účty
+
     def __init__(self, deposit=0):
         self._balance = deposit
 
     def deposit(self, money):
         self._balance += money
 
+    @classmethod
+    def add_counter(cls, num):
+        cls.counter += num
+
+    @classmethod
+    def get_counter(cls):
+        return cls.counter
 
     def withraw(self, money):
         if self._balance >= money:
