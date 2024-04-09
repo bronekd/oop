@@ -27,3 +27,4 @@ class BankAccount:
     @staticmethod
     def sayGreatings():
         print("Nice to meet you")
+        #statická metoda používám jen jednou vhodné pro kalkulačku
