@@ -31,28 +31,19 @@ print(c1.name)
 c1.start()
 """
 
-# od tadyma nefunguje výpošt tvarů 10
-from fraction import Fraction
-from my_error import MyCustomError
-from car import Car
-#from geometry import *
-import geometry
+#opraveny výpočet tvarů
 
-# další úkol počítání plochy
-#circle = Circle("Kruh", 5)
-#print(f"Plocha {circle.name} je: {circle.calculate_area()}")
+from geometry import *
+#circle = geometry.Circle("Kruh", 5)
+circle = Circle("Kruh", 5)
+print(f"Plocha {circle.name} je: {circle.calculate_area()}")
 
+#square = Square("Ctverec", 4) # Nefunguje
+#print(f"Plocha {square.name} je: {square.calculate_area()}")
 
-#squer = Circle("Kruh", 5)
-#print(f"Plocha {circle.name} je: {circle.calculate_area()}")
+rectangle = Rectangle("Obdelnik", 3, 6)
+print(f"Plocha {rectangle.name} je: {rectangle.calculate_area()}")
 
-# zde končí nefunguje 10
-
-
-
-
-
-# ukol Animal
 
 
 
