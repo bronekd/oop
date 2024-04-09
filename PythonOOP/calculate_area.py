@@ -12,5 +12,5 @@ class Shape:
 
 
 
-#pokracovat comitem geometrypagace
+#pokracovat comitem geometrypagace dopln!!
 

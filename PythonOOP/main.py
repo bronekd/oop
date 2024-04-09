@@ -1,6 +1,3 @@
-from fraction import Fraction
-from my_error import MyCustomError
-
 """
 f1 = Fraction(1,3)
 
@@ -34,9 +31,23 @@ print(c1.name)
 c1.start()
 """
 
-# další úkol počítání plochy
+#opraveny výpočet tvarů
+
+from geometry import *
+#circle = geometry.Circle("Kruh", 5)
 circle = Circle("Kruh", 5)
 print(f"Plocha {circle.name} je: {circle.calculate_area()}")
 
-squ = Circle("Kruh", 5)
-print(f"Plocha {circle.name} je: {circle.calculate_area()}")
+#square = Square("Ctverec", 4) # Nefunguje
+#print(f"Plocha {square.name} je: {square.calculate_area()}")
+
+rectangle = Rectangle("Obdelnik", 3, 6)
+print(f"Plocha {rectangle.name} je: {rectangle.calculate_area()}")
+
+
+
+
+
+
+
+
