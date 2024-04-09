@@ -1,20 +1,28 @@
 class Calculator:
     ans = 0
+    ans2 = 0
 
-    @staticmethod
+    @staticmethod #decorater
     def add(a, b):
         return a+b
-    @staticmethod
+    @staticmethod #decorater
     def divide(a, b):
         return a / b
 
-    @classmethod
+    @classmethod #decorater
     def ans_add(cls, a):
         cls.ans += a
         return cls.ans
 
-    @classmethod
+    @classmethod #decorater
     def clean_ans(cls):
-        cls.ans = 0
+        cls.ans += 0
 
+    @staticmethod
+    def minus(a, b):
+        return a - b
 
+    @classmethod
+    def ans2_minus(cls, b):
+        cls.ans2 -= b
+        return cls.ans2
