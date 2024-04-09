@@ -25,7 +25,10 @@ print(f"print d: {d}")
 
 q = Calculator.ans2_minus(10)
 print(f"print q: {q}")
+print()
 
+f = Calculator.largest(1,22,3,4,52)
+print(f)
 
 
 

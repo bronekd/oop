@@ -26,3 +26,7 @@ class Calculator:
     def ans2_minus(cls, b):
         cls.ans2 -= b
         return cls.ans2
+
+    @staticmethod  # decorater
+    def largest(*args):
+        return max(args)
