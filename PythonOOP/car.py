@@ -1,5 +1,5 @@
-from vehicle import Vehicle
-
+from .vehicle import Vehicle
+import json
 #rozšiřuje soubor vehicle dědičnost
 
 
@@ -10,3 +10,8 @@ class Car(Vehicle):
 
     def turn(self, direction):
         print(f"Odbočím do {direction}")
+    def __str__(self):
+        return f"name: {self.name}, color: {self.color}"
+
+    def to_json(self):
+        return json.dumps(self.__dict__)
