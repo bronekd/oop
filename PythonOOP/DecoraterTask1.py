@@ -38,3 +38,31 @@ def stars(myFunction):
 
 curent_time = stars(my_curent_time)
 curent_time()
+
+print()
+print()
+
+#task 3. přepsat funkci výše do sintaxe se zavináčem více použivanou sintaksi
+
+def stars2(myFunction):
+    def simpleWrapper():
+        print("*********************")
+        myFunction()
+        print("*********************")
+
+    return simpleWrapper
+
+@stars2
+def my_curent_time_deco():
+    print("20:22")
+
+my_curent_time_deco()
+
+
+
+
+
+
+
+
+
